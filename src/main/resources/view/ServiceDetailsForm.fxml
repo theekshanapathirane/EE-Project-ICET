@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXTextField?>
-<?import com.jfoenix.controls.JFXTreeTableView?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.TreeTableColumn?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.shape.Circle?>
-<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServiceDetailsFormController">
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServiceDetailsFormController">
    <center>
       <GridPane prefHeight="584.0" prefWidth="923.0" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -30,7 +21,7 @@
           <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <GridPane style="-fx-background-color: #19307B;">
+            <GridPane style="-fx-background-color: #B2BEB5;">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -58,7 +49,7 @@
                         <Label layoutX="48.0" layoutY="47.0" text="Time" textFill="WHITE" GridPane.columnIndex="1" />
                      </children>
                   </GridPane>
-                  <GridPane>
+                  <GridPane style="-fx-background-color: #B2BEB5;">
                      <columnConstraints>
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -209,7 +200,7 @@
                               <JFXTextField fx:id="txtPartCost" layoutX="20.0" layoutY="28.0" style="-fx-background-color: WHITE;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                               <Label layoutX="264.0" layoutY="12.0" text="Update Status" GridPane.columnIndex="4" />
                               <ComboBox fx:id="cmbStatus" prefWidth="150.0" style="-fx-background-color: WHITE;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                              <JFXButton fx:id="addPartBtn" onAction="#AddPartBtnOnAction" style="-fx-background-color: #19307B;" text="Add Part" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                              <JFXButton fx:id="addPartBtn" onAction="#AddPartBtnOnAction" style="-fx-background-color: #a3ff43;" text="Add Part" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                                  <font>
                                     <Font name="System Bold" size="13.0" />
                                  </font>
@@ -273,7 +264,7 @@
                                   <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <JFXButton fx:id="completeOrderBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#CompleteOrderBtnOnAction" style="-fx-background-color: #19307B;" text="Complete Order" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <JFXButton fx:id="completeOrderBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#CompleteOrderBtnOnAction" style="-fx-background-color: #228B22;" text="Complete Order" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="14.0" />
                                        </font>
@@ -292,7 +283,7 @@
                                   <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <JFXButton fx:id="updateBtn" maxWidth="1.7976931348623157E308" onAction="#UpdateBtnOnAction" style="-fx-background-color: #19307B;" text="Update" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <JFXButton fx:id="updateBtn" maxWidth="1.7976931348623157E308" onAction="#UpdateBtnOnAction" style="-fx-background-color: #228B22;" text="Update" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="14.0" />
                                        </font>
